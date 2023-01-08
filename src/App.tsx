@@ -5,7 +5,7 @@ import { useFetchRepositories } from './hooks/useRepos'
 import { useFavoriteReposStore } from './store/favoriteRepos'
 
 function App (): JSX.Element {
-  const { data, isLoading } = useFetchRepositories()
+  const { data, isLoading } = useFetchRepositories('brandovidal')
 
   const { favoriteReposIds } = useFavoriteReposStore()
 
